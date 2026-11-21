@@ -1,0 +1,30 @@
+# Python runtime & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# User Private Contact Files (Protection against credential/data leaks)
+imports/*.vcf
+imports/*.csv
+exports/
+crash_log.txt
+*.log
+
+# Keep sample data for repository testing
+!sample_data/
+!sample_data/*.vcf
+!sample_data/*.csv
+
+# OS and IDE caches
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
