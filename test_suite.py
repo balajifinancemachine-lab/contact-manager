@@ -1,6 +1,5 @@
-import sys
-import os
 import re
+import sys
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -8,6 +7,7 @@ if hasattr(sys.stdout, "reconfigure"):
 
 # Test standalone contact_manager.pyw directly
 import importlib.util
+
 spec = importlib.util.spec_from_file_location("contact_manager", "contact_manager.pyw")
 contact_manager = importlib.util.module_from_spec(spec)
 sys.modules["contact_manager"] = contact_manager

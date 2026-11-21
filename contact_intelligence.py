@@ -4,8 +4,8 @@ Contact Intelligence Engine - Backward Compatibility Shim
 =============================================================================
 This module redirects all calls to the unified standalone `contact_manager.pyw`.
 """
-import sys
 import importlib.util
+import sys
 from pathlib import Path
 
 _pyw_path = Path(__file__).parent / "contact_manager.pyw"
